@@ -1,0 +1,215 @@
+/* import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Page Styling */
+
+/* navigation bar styles */
+.navbar {
+    background: #ff69b4; /* soft pink color */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* add space for fixed navbar */
+body {
+    padding-top: 60px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #45fff1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* header styling */
+.header {
+    background: linear-gradient(135deg, #ff4081, #ff79b0);
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* main content */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* image section */
+#img-div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#img-caption {
+    font-style: italic;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* biography and content sections */
+#biography, #members-info, #accolades-info, #albums, #music-videos, #social-media {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #ff4081;
+    border-left: 5px solid #ff4081;
+    padding-left: 10px;
+}
+
+/* table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #ff4081;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Spotify embed styling */
+iframe {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Youtube video section */
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-container {
+    width: 45%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid #ff4081;
+}
+
+/* responsive design media */
+@media screen and (max-width: 768px) {
+    .video-container {
+        flex: 1 1 100%; /* 1 per row on small screens */
+        max-width: 100%;
+    }
+
+    .video-container iframe {
+        height: 200px;
+    }
+}
+/* for mobile */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+/* for devices with smaller screens) */
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+/* social media section */
+#social-media a {
+    display: inline-block;
+    background: #ff4081;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#social-media a:hover {
+    background: #e6006e;
+}
